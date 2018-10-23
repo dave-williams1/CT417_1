@@ -6,7 +6,6 @@ branches:
   - master
 build:
   ci:
-  - cd CT417_1
   on_success:
   - mvn clean
   - mvn test
