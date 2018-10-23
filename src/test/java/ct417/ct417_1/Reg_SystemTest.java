@@ -17,13 +17,12 @@ import static org.junit.Assert.*;
  * @author David Williams
  */
 public class Reg_SystemTest {
-    
+    Reg_System reg = new Reg_System();
     public Reg_SystemTest() {
     }
     
     @BeforeClass
     public static void setUpClass() {
-        Reg_System reg = new Reg_System();
     }
     
     @AfterClass
@@ -48,5 +47,16 @@ public class Reg_SystemTest {
         Reg_System.main(args);
         // TODO review the generated test code and remove the default call to fail.
     }
+    
+    @org.junit.Test
+    public void testAddStudentCT417() {
+        Student student2 = new Student("fname", "lname", "dob", 20, 1234567, "courses");
+        reg.AddStudentCT417(student2);
+    }
+    @org.junit.Test
+    public void testAddStudentEE451() {
+        Student student2 = new Student("fname", "lname", "dob", 20, 1234567, "courses");
+        reg.AddStudentEE451(student2);
+    }   
     
 }
